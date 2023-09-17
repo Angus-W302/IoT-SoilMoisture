@@ -1,12 +1,13 @@
-const express= require('express')
+const express = require('express')
 const router = express.Router()
 const {fetch} = require('undici')
 
 
 router.get('/', async(req, res) => {
     try {
-        const data = await getApiData()
-        res.render('index', {obj: data} )
+        const data = await getApiData();
+        console.log(data);
+        res.render('index', {obj: data});
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('An error occurred while fetching data.');
@@ -15,7 +16,7 @@ router.get('/', async(req, res) => {
 
 async function getApiData() {
     try { 
-        const res = await fetch('http://192.168.1.xxx')
+        const res = await fetch('http://192.168.1.112')
 
         if (!res.ok) {
             throw new Error('Failed to fetch data')
@@ -28,8 +29,7 @@ async function getApiData() {
             location : txt.variables.location,
             id: txt.id,
             hardware: txt.hardware,
-            temperature : txt.variables.temperature,
-            humidity : txt.variables.humidity,
+            soilMoisture : txt.variables.soilMoisture,
         }
 
         console.log(txt)

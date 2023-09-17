@@ -1,6 +1,5 @@
 {
   "name": "iot-weather",
-
   "version": "0.1.0",
   "description": "An IoT Project",
   "main": "server.js",
