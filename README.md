@@ -39,14 +39,6 @@ The purpose of this project is to provide a simple and practical solution for mo
 
 Feel free to adjust the threshold and LED behavior according to your requirements in the Arduino code.
 
-For detailed setup and usage instructions, refer to the project documentation.
-
-If you would like to contribute to this project, feel free to submit issues, fork the repository, and create pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Citation
 - [w3schools CSS Tutorials](https://www.w3schools.com/css/)
 - [Esp32io Soil Moisture Sensor Wiring Tutorial](https://esp32io.com/tutorials/esp32-soil-moisture-sensor)
