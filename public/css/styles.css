@@ -2,16 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2efe9; /* Earthy background color */
+  background-color: #384e1d; 
 }
 
 nav {
-  background-color: #8a6d3b; /* Dark brown for navigation */
+  background-color: #8a6d3b;
   padding: 10px;
 }
 
 nav p {
-  color: #fff; /* White text for Categories */
+  color: #fff; 
   font-weight: bold;
   margin: 0;
 }
@@ -22,7 +22,7 @@ nav li {
 }
 
 nav a {
-  color: #fff; /* White text for links */
+  color: #fff; 
   text-decoration: none;
 }
 
@@ -33,17 +33,17 @@ nav a:hover {
 article {
   padding: 20px;
   margin: 20px;
-  background-color: #fff; /* White background for article */
+  background-color: #fff; 
 }
 
 article h2 {
-  color: #8a6d3b; /* Dark brown for headings */
+  color: #8a6d3b; 
 }
 
 aside {
   padding: 20px;
   margin: 20px;
-  background-color: #fff; /* White background for aside */
+  background-color: #fff; 
 }
 
 aside ul {
@@ -62,7 +62,7 @@ aside p {
 
 aside strong {
   font-weight: bold;
-  color: #8a6d3b; /* Dark brown for strong text */
+  color: #8a6d3b; 
 }
 
 img {
@@ -70,7 +70,6 @@ img {
   margin: auto;
 }
 
-/* Styles for the links in the aside */
 aside a {
   color: #8a6d3b;
   text-decoration: none;
@@ -80,7 +79,6 @@ aside a:hover {
   text-decoration: underline;
 }
 
-/* Responsive design for small screens */
 @media (max-width: 767px) {
   nav, article, aside {
     margin: 10px;

@@ -31,6 +31,9 @@ int soilMoisture; // create a variable for soil moisture
 char* location = "Al Fresco";
 int timer = 72000;
 
+//Led Pin
+const int ledPin = 14; 
+
 // Declare functions to be exposed to the API
 int ledControl(String command);
 
@@ -38,6 +41,8 @@ void setup(void)
 {
   // Start Serial
   Serial.begin(115200);
+
+  pinMode(ledPin, OUTPUT);
 
   // Init variables and expose them to REST API
   rest.variable("soilMoisture", &soilMoisture); // Replace temperature and humidity
@@ -79,14 +84,16 @@ void loop()
   soilMoisture = analogRead(SOIL_MOISTURE_PIN);
 
   // Check if soil is dry or wet and print soil moisture value
-  if (soilMoisture < THRESHOLD) {
-    Serial.println("The soil is DRY");
-    Serial.print("Soil Moisture: ");
-    Serial.println(soilMoisture);
-  } else {
+  if (soilMoisture > THRESHOLD) {
     Serial.println("The soil is WET");
     Serial.print("Soil Moisture: ");
     Serial.println(soilMoisture);
+    digitalWrite(ledPin, HIGH);
+  } else {
+    Serial.println("The soil is DRY");
+    Serial.print("Soil Moisture: ");
+    Serial.println(soilMoisture);
+    digitalWrite(ledPin, LOW);
   }
 
   // Check running time and reset if expired
