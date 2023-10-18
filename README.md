@@ -13,8 +13,8 @@
 - [x] Test ESP32 - get json data via wifi
 - [x] Initialize Node.js environment
 - [x] setup server.js with express
-- [ ] set index route and views
-- [ ] link ESP32 to Node app with fetch
+- [x] set index route and views
+- [x] link ESP32 to Node app with fetch
 
 ### Initializing a Node.js Environment
 
@@ -63,8 +63,10 @@ Date | Commit Message | Version
 
 - [Web Page Layouts](https://www.youtube.com/watch?v=3C_22eBWpjg)
 - [JS Native Fetch](https://www.youtube.com/watch?v=MBqS1kYzwTc)
+- [w3schools CSS Tutorials](https://www.w3schools.com/css/)
+- [Esp32io Soil Moisture Sensor Tutorial](https://esp32io.com/tutorials/esp32-soil-moisture-sensor)
+- [Esp32io Wiring An LED Tutorial](https://esp32io.com/tutorials/esp32-led-blink)
 
 =======
 # IoT-SoilMoisture
-This is my term 3 assessment repository.
 >>>>>>> origin/main
