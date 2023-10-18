@@ -1,72 +1,50 @@
-<<<<<<< HEAD
-# Weather Station
+# IoT Soil Moisture Sensor with ESP32 and LED
 
-## an IoT project
+This project demonstrates a soil moisture sensor connected to an ESP32 microcontroller that activates an LED when the soil moisture exceeds a predefined threshold.
 
-![Yellow-Umbrella](public/assets/yellow-umbrella.png)
+## Purpose
 
-### Development Roadmap
+The purpose of this project is to provide a simple and practical solution for monitoring soil moisture in a garden or plant pot. When the soil moisture level is above a certain threshold, indicating that the soil is adequately moist, the connected LED will be turned on. This feature helps in efficient watering and plant care.
 
-- [x] Setup repos - GitHub
-- [x] setup ESP32 - Arduino IDE
-- [x] Install dependencies - aREST.h and DHT.h
-- [x] Test ESP32 - get json data via wifi
-- [x] Initialize Node.js environment
-- [x] setup server.js with express
-- [x] set index route and views
-- [x] link ESP32 to Node app with fetch
+## Setup
 
-### Initializing a Node.js Environment
+### Components Required
 
-1. Ensure that Node.js and NPM are installed on your system:
-    > node --version
+- ESP32 development board
+- Soil moisture sensor
+- LED
+- Resistors (as needed)
+- Jumper wires
 
-    > npm --version
+### Wiring
 
-2. In terminal, inside the project directory:
-    > npm init -y
+1. Connect the soil moisture sensor to the ESP32 analog input pin.
+2. Connect the LED to a digital output pin on the ESP32 through appropriate resistors.
 
-3. This will add a package.json file
+### Installation
 
-4. Install dependencies
-    > npm install express ejs express-ejs-layouts
+1. Set up the Arduino IDE on your computer.
+2. Install the ESP32 board in the Arduino IDE.
+3. Clone or download the project code from this repository.
 
-5. Install development dependencies
-    > npm install --save-dev dotenv nodemon
+## Usage
 
+1. Open the Arduino IDE and load the project code.
+2. Customize the code with your specific pin configurations, threshold values, and LED logic as needed.
+3. Upload the code to the ESP32 board.
+4. Power up the ESP32 board and ensure it is connected to the soil moisture sensor.
+5. Observe the LED behavior based on the soil moisture level:
+   - LED ON: Soil moisture above the threshold.
+   - LED OFF: Soil moisture below the threshold.
 
-### Initializing a Node.js Environment
+Feel free to adjust the threshold and LED behavior according to your requirements in the Arduino code.
 
-1. Ensure that Node.js and NPM are installed on your system:
-    > node --version
+For detailed setup and usage instructions, refer to the project documentation.
 
-    > npm --version
+## Contributing
 
-2. In terminal, inside the project directory:
-    > npm init -y
+If you would like to contribute to this project, feel free to submit issues, fork the repository, and create pull requests.
 
-3. This will add a package.json file
+## License
 
-4. Install dependencies
-    > npm install express ejs express-ejs-layouts
-
-5. Install development dependencies
-    > npm install --save-dev dotenv nodemon
-
-### Worklog and Commits
-
-Date | Commit Message | Version
-:-----|:----------------:|:--------:
-25.08.23 | initial setup | 0.1.0
-
-### References
-
-- [Web Page Layouts](https://www.youtube.com/watch?v=3C_22eBWpjg)
-- [JS Native Fetch](https://www.youtube.com/watch?v=MBqS1kYzwTc)
-- [w3schools CSS Tutorials](https://www.w3schools.com/css/)
-- [Esp32io Soil Moisture Sensor Tutorial](https://esp32io.com/tutorials/esp32-soil-moisture-sensor)
-- [Esp32io Wiring An LED Tutorial](https://esp32io.com/tutorials/esp32-led-blink)
-
-=======
-# IoT-SoilMoisture
->>>>>>> origin/main
+This project is licensed under the [MIT License](LICENSE).
