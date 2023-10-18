@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Weather Station
 
 ## an IoT project
@@ -63,3 +64,7 @@ Date | Commit Message | Version
 - [Web Page Layouts](https://www.youtube.com/watch?v=3C_22eBWpjg)
 - [JS Native Fetch](https://www.youtube.com/watch?v=MBqS1kYzwTc)
 
+=======
+# IoT-SoilMoisture
+This is my term 3 assessment repository.
+>>>>>>> origin/main
